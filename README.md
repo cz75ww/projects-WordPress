@@ -19,7 +19,7 @@ I'll  implement an architecture to host WordPress for a dev workload with minima
 * aws_launch_template
 * Auto Scaling Group
 
-### As a good practice, keep your terraform.tfstate file in a remote backend - [TerraformBackend](https://www.terraform.io/language/settings/backends)
+##### As a good practice, keep your terraform.tfstate file in a remote backend - [TerraformBackend](https://www.terraform.io/language/settings/backends)
 
 #### Deploy steps
 ```
