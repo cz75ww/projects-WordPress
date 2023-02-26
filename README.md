@@ -22,9 +22,10 @@ I'll  implement an architecture to host WordPress for a dev workload with minima
 ### As a good practice, keep your terraform.tfstate file in a backend - [TerraformBackend](https://www.terraform.io/language/settings/backends)
 
 #### Deploy steps
-terraform init                  => "To initializer the backup and download the provider plugins"
-terraform validate              => "To validate your code / configuration"
-terraform fmt -recursise        => "To put in a canonical format and style"
-terraform plan                  => "To see build a execution plan from your code"
-terraform apply --auto-approve  => "To apply / install your AWS resources via terraform"
+* terraform init                      => "To initializer the backup and download the provider plugins"
+* terraform validate                  => "To validate your code / configuration"
+* terraform fmt -recursise            => "To put in a canonical format and style"
+* terraform plan                      => "To see build a execution plan from your code"
+* terraform apply --auto-approve      => "To apply / install your AWS resources via terraform"
+* terraform destroy --auto-approve    => "To destroy / uninstall your AWS resources via terraform"
 
