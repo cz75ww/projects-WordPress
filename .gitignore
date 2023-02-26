@@ -1,0 +1,3 @@
+.terraform
+.terraform.tfsatte*
+./modules/dev/rds-database.tf
