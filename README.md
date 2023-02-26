@@ -1,16 +1,10 @@
 # Build a WordPress Website on AWS using terraform and Ansible
 ## Requirements
 * Terraform v1 or latest
-* Ansible 2.9  or latest
 
 ## Introduction
-* In this project, we will deploy and host WordPress with terraform and Ansible.
-* I'll  implement an architecture to host WordPress for a production workload with minimal management responsibilities required. To accomplish this, I'm gonna to use AWS Elastic Beanstalk and Amazon Relational Database Service (RDS). Once I'll upload the WordPress files, Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring. Amazon RDS provides cost-efficient and resizable capacity, while managing time-consuming database administration tasks for you.
-
-## Why do I need both Terraform and Ansible?
-* Terraform is designed to provision different infrastructure components.
-* Ansible is a configuration-management and application-deployment tool. 
-* It means that you’ll use Terraform first to create, for example, AWS resources and ansible to set up the application
+In this project, we will deploy and host WordPress with terraform and Ansible.
+I'll  implement an architecture to host WordPress for a production workload with minimal management responsibilities required. To accomplish this, I'm gonna to use AWS Elastic Beanstalk and Amazon Relational Database Service (RDS). Once I'll upload the WordPress files, Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring. Amazon RDS provides cost-efficient and resizable capacity, while managing time-consuming database administration tasks for you.
 
 #### To deploy the AWS resources,terraform will create the following resources:
 * VPC (Virtual Private Cloud)
