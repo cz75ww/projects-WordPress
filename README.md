@@ -1,4 +1,4 @@
-# Build a WordPress Website on AWS using terraform and Ansible
+# Build a WordPress Website on AWS using terraform
 ## Requirements
 * Terraform v1 or latest
 
