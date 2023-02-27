@@ -12,9 +12,8 @@ I'll  implement an architecture to host WordPress for a dev workload with minima
 * Route tables
 * Internet Gatway
 * Route Table
-* Public, loadbalancer and  Security Groups (Firewall rules for ssh,icmp, https and http protocols)
-** Public security group for ssh purpose
-** load balancer security group for application layer (80, 8080, 443)
+* Loadbalancer security group in order to set up firewall rules for icmp, https and http protocols
+* Public Security group for ssh connection
 * Load balancer
 * aws_launch_template
 * Auto Scaling Group
@@ -23,10 +22,10 @@ I'll  implement an architecture to host WordPress for a dev workload with minima
 
 #### Deploy steps
 ```
-terraform init                      => "To initializer the backup and download the provider plugins"
+terraform init                      => "To initializer the backend and download the provider plugins"
 terraform validate                  => "To validate your code / configuration"
 terraform fmt -recursise            => "To put in a canonical format and style"
-terraform plan                      => "To see build a execution plan from your code"
+terraform plan                      => "To see an execution plan from your code"
 terraform apply --auto-approve      => "To apply / install your AWS resources via terraform"
 terraform destroy --auto-approve    => "To destroy / uninstall your AWS resources via terraform"
 ```
