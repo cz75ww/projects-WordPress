@@ -22,10 +22,10 @@ I'll  implement an architecture to host WordPress for a dev workload with minima
 
 #### Deploy steps
 ```
-terraform init                      => "To initializer the backend and download the provider plugins"
-terraform validate                  => "To validate your code / configuration"
-terraform fmt -recursise            => "To put in a canonical format and style"
-terraform plan                      => "To see an execution plan from your code"
-terraform apply --auto-approve      => "To apply / install your AWS resources via terraform"
-terraform destroy --auto-approve    => "To destroy / uninstall your AWS resources via terraform"
+terraform init                      # Initializer the backend and download the provider plugins
+terraform validate                  # Validate your code / configuration
+terraform fmt -recursise            # To put in a canonical format and style
+terraform plan                      # See an execution plan from your code
+terraform apply --auto-approve      # Apply / install your AWS resources via terraform
+terraform destroy --auto-approve    # Destroy / uninstall your AWS resources via terraform
 ```
