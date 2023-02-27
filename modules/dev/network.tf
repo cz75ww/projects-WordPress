@@ -101,32 +101,6 @@ resource "aws_security_group" "public_sg" {
   tags = {
     Name = "fpsouza-public-sg-dev"
   }
-}
-
-resource "aws_security_group" "rds_sg" {
-  name   = "fpsouza-rds-sg-dev"
-  vpc_id = aws_vpc.vpc.id
-
-  dynamic "ingress" {
-    for_each = var.ingress_rds_ports
-    content {
-      from_port       = ingress.value
-      to_port         = ingress.value
-      protocol        = "tcp"
-      security_groups = [aws_security_group.lb_sg.id]
-    }
-  }
-
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-  tags = {
-    Name = "fpsouza-rds-sg-dev"
-  }
-}
 
 resource "aws_security_group" "lb_sg" {
   name   = "fpsouza-lb-sg-dev"
