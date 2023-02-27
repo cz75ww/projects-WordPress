@@ -12,9 +12,8 @@ I'll  implement an architecture to host WordPress for a dev workload with minima
 * Route tables
 * Internet Gatway
 * Route Table
-* Public, loadbalancer and  Security Groups (Firewall rules for ssh,icmp, https and http protocols)
-** Public security group for ssh purpose
-** load balancer security group for application layer (80, 8080, 443)
+* Loadbalancer security group in order to set up firewall rules for icmp, https and http protocols
+* Public Security group for ssh connection
 * Load balancer
 * aws_launch_template
 * Auto Scaling Group
