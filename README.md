@@ -6,7 +6,7 @@
 In this project, we will deploy and host WordPress using terraform.
 I'll  implement an architecture to host WordPress for a dev workload with minimal management responsibilities required. 
 
-#### To deploy the AWS resources,terraform will create the following resources:
+#### To deploy the AWS resources,terraform will create the following items:
 * VPC (Virtual Private Cloud)
 * Public and Private subnets
 * Route tables
