@@ -1,4 +1,0 @@
-.terraform
-terraform.tfsatte
-terraform.tfstate.backup
-./modules/dev/rds-database.tf
