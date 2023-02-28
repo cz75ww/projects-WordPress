@@ -25,6 +25,7 @@ Under envs folders you can create a subfolder for each environment fill a tf mai
 For demo purpose I have built a dev folder to deploy a DEV environment
 ```
 # Execute the cmds below into /envs/<env>/ e.g: /envs/dev/
+#
 terraform init                      # Initializer the backend and download the provider plugins
 terraform validate                  # Validate your code / configuration
 terraform fmt -recursise            # To put in a canonical format and style
