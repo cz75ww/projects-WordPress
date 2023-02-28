@@ -101,6 +101,7 @@ resource "aws_security_group" "public_sg" {
   tags = {
     Name = "fpsouza-public-sg-dev"
   }
+}
 
 resource "aws_security_group" "lb_sg" {
   name   = "fpsouza-lb-sg-dev"
